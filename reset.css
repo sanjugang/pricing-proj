@@ -1,0 +1,42 @@
+/* Resetting basic elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent font family and size */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove text decoration from links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set consistent table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Set consistent image styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Set a consistent default font size and style */
+html {
+  font-size: 16px;
+}

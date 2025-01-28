@@ -1,136 +1,85 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.con{
+.container{
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin:auto;
-    background-color: hsl(240, 78%, 98%);;
+    background-color:hsl(240, 78%, 98%);
     background-image:url("./images/bg-top.svg"),url("./images/bg-bottom.svg");
     background-repeat: no-repeat,no-repeat;
     background-position: top right,bottom left;
-    
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
 }
-.allprices{
+.container .mainheading{
+    padding-top: 4rem;
+}
+.container-1{
+    width: 250px;
+    display: flex;
+    padding-top: 2rem;
+    justify-content: space-between;
+}
+
+.container .allprices{
     display: flex;
     flex-direction: column;
     width: 80%;
+}
+.container .allprices ul{
+    list-style-type:none;
+    padding-bottom: 2rem;
+}
+.container .allprices ul li{
+    padding: 2rem;
+}
+
+.plan{
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    /* padding: 2rem; */
+    margin-top: 3rem;
+    margin-bottom:3rem ;
+    align-items: stretch;
    
 }
-h2{
-    font-size: 40px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.plan #dollar{
+    font-size: 3rem;
 }
-.con1{
-    display: flex;
-    padding-top: 30px;
-    padding-bottom: 100px;
+.plan h2{
+    padding: 1rem;
+}
+.plan p{
+    padding: 2rem;
+    font-size: 4rem;
+    font-family: ;
+}
+
+    
+.learn{
+    display: block;
+    border: 0px solid red;
+    color: white;
+    border-radius:0.5rem;
+    text-decoration: none;
+    background-color: hsl(233, 13%, 49%);
+    margin: 1rem;
+    padding:1rem;
+    font-weight: 700;
+    
 
 }
-.con1 p{
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-}
-.con .tag1{
-    height: 30px;
-    width: 50px;
-    background-color: violet;
-    border-radius: 0%;
-}
-.con2{
-    flex-direction: column;
-    text-align: center;
-    border-radius: 10px;
-    background-color: white;
-    width: 90%;
-    margin: auto;
-    padding: 1rem;
-    margin-top: 3rem;
-    margin-bottom:3rem ;
-    }
-.con2 h4{
-    font-size: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.con2 h1{
-    font-size: 60px;
-    padding-bottom: 20px;
-}
-.con2 p{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.con3{
-    flex-direction: column;
-    text-align: center;
-    border-radius: 10px;
-    background-color: white;
-    width: 90%;
-    margin: auto;
-    padding: 1rem;
-    margin-top: 3rem;
-    margin-bottom:3rem ;
-}
-.con3 h4{
-    font-size: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.con3 h1{
-    font-size: 60px;
-    padding-bottom: 20px;
-}
-.con3 p{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-}
-.con4{
-    flex-direction: column;
-    text-align: center;
-    border-radius: 10px;
-    background-color: white;
-    width: 90%;
-    margin: auto;
-    padding: 1rem;
-    margin-top: 3rem;
-    margin-bottom:3rem ;
-}
-.con4 h4{
-    font-size: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.con4 h1{
-    font-size: 60px;
-    padding-bottom: 20px;
-}
-.con4 p{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.learn{
-    border: 0px solid red;
-    height: 10p;
-    width: 65%;
-    margin: auto;
-    border-radius:1rem;
-    background-color: hsl(233, 13%, 49%);
-    
-}.plan:hover{
+.plan:hover{
     background-color:hsl(237, 63%, 64%);
     color: white;
     transform:scale(1.05);
@@ -139,6 +88,7 @@ h2{
 .plan:hover .learn{
     color: rgb(151, 94, 151);;
     background-color: white;
+    
 }
 .switch {
     position: relative;
@@ -204,7 +154,7 @@ h2{
   border-radius: 50%;
 }
 @media(min-width:1440px){
-    .allprices{
+    .container .allprices{
         display: flex;
         flex-direction: row;
         padding: 2rem;
